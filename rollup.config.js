@@ -1,6 +1,7 @@
 export default args => {
   const result = args.configDefaultConfig;
   result.forEach(config => {
+    // ignore warnning
     const onwarn = config.onwarn;
     config.onwarn = warning => {
       if (
